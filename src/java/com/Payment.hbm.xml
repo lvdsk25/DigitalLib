@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Apr, 2020 1:29:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.Payment" table="payment" catalog="project" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="cno" type="string">
+            <column name="cno" length="20" not-null="true" />
+        </property>
+        <property name="exp" type="string">
+            <column name="exp" length="20" not-null="true" />
+        </property>
+        <property name="cvv" type="string">
+            <column name="cvv" length="20" not-null="true" />
+        </property>
+        <property name="coupon" type="string">
+            <column name="coupon" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>booksans</servlet-name>
+        <servlet-class>booksans</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>registration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>booksregistration</servlet-name>
+        <servlet-class>booksregistration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cardregistration</servlet-name>
+        <servlet-class>cardregistration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>booksans</servlet-name>
+        <url-pattern>/booksans</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>booksregistration</servlet-name>
+        <url-pattern>/booksregistration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cardregistration</servlet-name>
+        <url-pattern>/cardregistration</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
